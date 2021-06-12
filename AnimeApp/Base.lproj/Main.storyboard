@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gE1-7V-lbN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Kco-x8-9Ut">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQT-Ku-5Nu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="3XO-LF-U65" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4z-QH-oKp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OLQ-hK-Tdn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="JGe-Qj-C1m"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1035" y="-13"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UZN-JA-tHi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqZ-I1-kTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="gE1-7V-lbN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eeW-3z-eDN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Iyl-3W-Nr7" kind="relationship" relationship="viewControllers" id="iSK-9c-tzQ"/>
+                        <segue destination="3XO-LF-U65" kind="relationship" relationship="viewControllers" id="yUR-kD-xbu"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="147" y="-317"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="63i-xT-hjN">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0J-v3-8M1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="sEP-yy-SYY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="117" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BAb-g9-odX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="mzN-ou-Ah1">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" rowHeight="121.5" id="YxG-z9-af2">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="121.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YxG-z9-af2" id="yfc-yn-asN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="121.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJE-7Z-twc">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="121.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8K9-1p-X1i">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="121.5"/>
+                                                            <subviews>
+                                                                <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Anime Title" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oa-Hg-Wzv">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="121.5"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="barTintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                                    <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="Networking.swift" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </searchBar>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eJE-7Z-twc" firstAttribute="leading" secondItem="yfc-yn-asN" secondAttribute="leading" constant="20" id="0Oi-xr-Qha"/>
+                                                <constraint firstAttribute="bottom" secondItem="eJE-7Z-twc" secondAttribute="bottom" id="7Ms-4h-IGe"/>
+                                                <constraint firstItem="eJE-7Z-twc" firstAttribute="centerX" secondItem="yfc-yn-asN" secondAttribute="centerX" id="IHk-Wk-EWR"/>
+                                                <constraint firstItem="eJE-7Z-twc" firstAttribute="top" secondItem="yfc-yn-asN" secondAttribute="top" id="dcc-q5-SoW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="sEP-yy-SYY" id="4Ig-bv-ci1"/>
+                            <outlet property="delegate" destination="sEP-yy-SYY" id="Mxa-Aq-qe3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search" id="qGV-sT-cx2"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1997.1014492753625" y="-635.49107142857144"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="HxS-Fv-123">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AU-sL-Mcl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iyl-3W-Nr7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="circlebadge.2" catalog="system" id="cDo-Gh-lva"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="e3e-YY-Puz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sEP-yy-SYY" kind="relationship" relationship="rootViewController" id="wT1-4c-1nO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1017" y="-692"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circlebadge.2" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
